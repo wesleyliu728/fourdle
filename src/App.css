@@ -2,65 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
       /* NYT Fonts */
-      @font-face {
-        font-family: 'nyt-karnakcondensed';
-        src: url('./fonts/karnakcondensed-normal-700.woff2') format('woff2'),
-          url('./fonts/karnakcondensed-normal-700.woff') format('woff');
-        font-weight: 700;
-        font-style: normal;
-      }
 
-      @font-face {
-        font-family: 'nyt-franklin';
-        src: url('./fonts/franklin-normal-500.woff2') format('woff2'),
-          url('./fonts/franklin-normal-500.woff') format('woff');
-        font-weight: 500;
-        font-style: normal;
-      }
-
-      @font-face {
-        font-family: 'nyt-franklin-700';
-        src: url('./fonts/franklin-normal-700.woff2') format('woff2'),
-          url('./fonts/franklin-normal-700.woff') format('woff');
-        font-weight: 700;
-        font-style: normal;
-      }
 
       /* Global Styles & Colors */
       :root {
@@ -81,16 +25,8 @@
         --header-height: 50px;
         --keyboard-height: 200px;
         --game-max-width: 500px;
-
-        /* icons */
-        --spelling-bee: url('./images/nav-icons/SpellingBee-Icon-Normalized.svg');
-        --daily: url('./images/nav-icons/Crossword-Icon-Normalized.svg');
-        --mini: url('./images/nav-icons/Mini-Icon-Normalized.svg');
-        --tiles: url('./images/nav-icons/Tiles-Icon-Normalized.svg');
-        --sudoku: url('./images/nav-icons/Sudoku-Icon-Normalized.svg');
-        --vertex: url('./images/nav-icons/Vertex-Icon-Normalized.svg');
-        --letter-boxed: url('./images/nav-icons/LetterBoxed-Icon-Normalized.svg');
       }
+
 
       /* Light theme colors */
       :root {
@@ -118,13 +54,7 @@
         --opacity-50: rgba(0, 0, 0, 0.5);
 
         /* dark mode icons */
-        --spelling-bee: url('./images/nav-icons/SpellingBee-Icon-Normalized-Color.svg');
-        --daily: url('./images/nav-icons/Crossword-Icon-Normalized-Color.svg');
-        --mini: url('./images/nav-icons/Mini-Icon-Normalized-Color.svg');
-        --tiles: url('./images/nav-icons/Tiles-Icon-Normalized-Color.svg');
-        --sudoku: url('./images/nav-icons/Sudoku-Icon-Normalized-Color.svg');
-        --vertex: url('./images/nav-icons/Vertex-Icon-Normalized-Color.svg');
-        --letter-boxed: url('./images/nav-icons/LetterBoxed-Icon-Normalized-Color.svg');
+
       }
       /* Constant colors and colors derived from theme */
       :root,
@@ -186,19 +116,23 @@
       #pz-gdpr {
         font-family: 'nyt-franklin-700' !important;
       }
-
-      .square {
-        position:relative;
-        z-index: 100;
-        background: #fff;
-        border: 0.3px solid #6B6B6B;
-        float: left;
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 60px;
-        height: 60px;
-        margin-right: 0px;
-        padding: 0;
-        text-align: center;
-        width: 60px;
-      }
+.board{
+  text-align:center;
+}
+.container{
+  text-align:center;
+  display:inline-block;
+  width: 100%;
+  height:auto;
+}
+.square {
+  display:inline-block;
+  background: #fff;
+  border: 0.3px solid #6B6B6B;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  margin: 3px;
+  }
