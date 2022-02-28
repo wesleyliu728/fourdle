@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  margin-top: 40px;
+  color:black;
 }
 
 
@@ -117,13 +118,10 @@
         font-family: 'nyt-franklin-700' !important;
       }
 .board{
-  text-align:center;
+
 }
 .container{
   text-align:center;
-  display:inline-block;
-  width: 100%;
-  height:auto;
 }
 .square {
   display:inline-block;
@@ -131,6 +129,9 @@
   border: 0.3px solid #6B6B6B;
   font-size: 24px;
   font-weight: bold;
+  line-height: auto;
+  text-align: center;
+  vertical-align: middle;
   line-height: 60px;
   height: 60px;
   width: 60px;
